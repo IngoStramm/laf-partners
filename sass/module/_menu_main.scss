@@ -1,0 +1,37 @@
+.scheme_original {
+	.body_type_2 {
+		#menu_main	{
+			&.menu_main_nav {
+				> li {
+					&:before {
+						color: $azul-1;
+					}
+					a {
+						color: $azul-1;
+					}
+					&.current-menu-item,
+					&.current-menu-parent {
+						background-color: $azul-1;
+						&:before {
+						}
+						a {
+							background-color: $branco;
+						}
+					}
+					&:hover {
+						background-color: $azul-1;
+						color: $branco;
+						&:before {
+							color: $branco;
+						}
+						a {
+							background-color: $azul-1;
+							color: $branco;
+						}
+					}
+				}
+			}
+		}	
+	}
+
+}

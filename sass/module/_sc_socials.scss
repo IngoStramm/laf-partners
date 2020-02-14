@@ -1,0 +1,8 @@
+.sc_socials {
+	a {
+		background-position: top center !important;
+		&:hover {
+			background-position: bottom center !important;
+		}
+	}
+}

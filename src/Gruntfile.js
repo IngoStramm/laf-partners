@@ -176,37 +176,16 @@ module.exports = function (grunt) {
                 src: [
                     '../**',
                     '!../src/**',
+                    '!../dist/**',
                     '!../**.md',
+                    '!../**.txt',
                     '!<%= dirs.sass %>/**',
                     '!../**.zip',
                     '<%= dirs.js %>/main.min.js'
                 ],
-                dest: '../<%= pkg.name %>.zip'
+                dest: '../dist/<%= pkg.name %>.zip'
             }
-        },
-
-        // downloads dependencies
-        curl: {
-        },
-
-        // unzip files
-        unzip: {
-        },
-
-        // renames and moves directories and files
-        rename: {
-        },
-
-        // clean directories and files
-        clean: {
-            options: {
-                force: true
-            }
-        },
-
-        replace: {
         }
-
     };
 
     // Initialize Grunt Config

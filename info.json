@@ -1,0 +1,24 @@
+{
+    "name": "Laf Partners",
+    "version": "2.0.0",
+    "download_url": "https://github.com/IngoStramm/laf-partners/raw/master/dist/laf-partners.zip",
+    "homepage": "https://agencialaf.com",
+    "requires": "4.7",
+    "tested": "5.5",
+    "last_updated": "2020-09-12 15:30:00",
+    "upgrade_notice": "Atualização do Laf Partners disponível",
+    "author": "Ingo Stramm",
+    "author_homepage": "https://agencialaf.com",
+    "sections": {
+        "description": "Este plugin é parte integrante do ConverteFácil.",
+        "installation": "A instalação deste plugin deve ser feita pelo Converte Fácil."
+    },
+    "icons": {
+        "1x": "https://github.com/IngoStramm/laf-partners/raw/master/images/plugin-banner-128x128.jpg",
+        "2x": "https://github.com/IngoStramm/laf-partners/raw/master/images/plugin-banner-256x256.jpg"
+    },
+    "banners": {
+        "low": "https://github.com/IngoStramm/laf-partners/raw/master/images/plugin-banner-772x250.jpg",
+        "high": "https://github.com/IngoStramm/laf-partners/raw/master/images/plugin-banner-1544x500.jpg"
+    }
+}

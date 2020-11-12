@@ -172,7 +172,7 @@ module.exports = function (grunt) {
         // zip the theme
         zip: {
             dist: {
-                cwd: '../',
+                cwd: '../../',
                 src: [
                     '../**',
                     '!../src/**',

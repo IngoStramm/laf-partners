@@ -1,7 +1,7 @@
 {
     "name": "laf-partners",
     "description": "Plugin do Laf Partners",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "title": "Laf Partners",
     "homepage": "https://agencialaf.com/",
     "main": "Gruntfile.js",

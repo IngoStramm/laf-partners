@@ -3,7 +3,7 @@
  * Plugin Name: Laf Partners
  * Plugin URI: https://agencialaf.com
  * Description: Plugin do Laf Partners
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Ingo Stramm
  * Author URI: https://agencialaf.com
  * Text Domain: lp

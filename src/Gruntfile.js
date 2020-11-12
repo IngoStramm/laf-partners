@@ -106,69 +106,6 @@ module.exports = function (grunt) {
             }
         },
 
-        // deploy via rsync
-        rsync: {
-            options: {
-                args: ['--verbose'],
-                exclude: [
-                    '**.DS_Store',
-                    '**Thumbs.db',
-                    '.editorconfig',
-                    '.git/',
-                    '.gitignore',
-                    '.jshintrc',
-                    'sass/',
-                    'src/',
-                    'README.md',
-                    '.ftppass'
-                ],
-                recursive: true,
-                syncDest: true
-            },
-            staging: {
-                options: {
-                    src: '../',
-                    dest: '~/PATH/wp-content/themes/odin',
-                    host: 'user@host.com'
-                }
-            },
-            production: {
-                options: {
-                    src: '../',
-                    dest: '~/PATH/wp-content/themes/odin',
-                    host: 'user@host.com'
-                }
-            }
-        },
-
-        // ftp deploy
-        // ref: https://npmjs.org/package/grunt-ftp-deploy
-        'ftp-deploy': {
-            build: {
-                auth: {
-                    host: 'ftp.SEU-SITE.com',
-                    port: 21,
-                    authPath: '../.ftppass',
-                    authKey: 'key_for_deploy'
-                },
-                src: '../',
-                dest: '/PATH/wp-content/themes/odin',
-                exclusions: [
-                    '../**.DS_Store',
-                    '../**Thumbs.db',
-                    '../.git/*',
-                    '../*.md',
-                    '../.gitignore',
-                    '../js/main.js',
-                    '../*.zip',
-                    '../*.sublime-project',
-                    '../*.sublime-workspace',
-                    '../src/**',
-                    '../.ftppass'
-                ]
-            }
-        },
-
         // zip the theme
         zip: {
             dist: {
@@ -181,6 +118,7 @@ module.exports = function (grunt) {
                     '!../**.txt',
                     '!<%= dirs.sass %>/**',
                     '!../**.zip',
+                    '!../info.json',
                     '<%= dirs.js %>/main.min.js'
                 ],
                 dest: '../dist/<%= pkg.name %>.zip'
@@ -205,9 +143,6 @@ module.exports = function (grunt) {
     // Optimize Images Task
     grunt.registerTask('optimize', ['imagemin']);
 
-    // Deploy Tasks
-    grunt.registerTask('ftp', ['ftp-deploy']);
-
     // Compress
     grunt.registerTask('compress', [
         'default',
@@ -217,7 +152,5 @@ module.exports = function (grunt) {
     // Short aliases
     grunt.registerTask('w', ['watch']);
     grunt.registerTask('o', ['optimize']);
-    grunt.registerTask('f', ['ftp']);
-    grunt.registerTask('r', ['rsync']);
     grunt.registerTask('c', ['compress']);
 };

@@ -16,7 +16,7 @@
         "grunt-text-replace": "~0.4.0",
         "grunt-zip": "~0.17.1",
         "load-grunt-tasks": "~3.5.2",
-        "minimist": "~1.2.0",
+        "minimist": "~1.2.6",
         "readable-stream": "~2.1.5"
     },
     "engines": {
